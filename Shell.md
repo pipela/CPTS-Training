@@ -33,3 +33,37 @@ stty raw -echo; fg
 <Enter>
 export PS1="\u@\h:\w$ "
 alias ll='ls -la'
+
+---------------------
+การเรียก Interactive Shells
+
+Interactive
+> /bin/sh -i
+
+Perl
+> perl —e 'exec "/bin/sh";'
+
+Ruby To Shell
+ruby: exec "/bin/sh"
+> ruby: exec "/bin/sh"
+
+Lua
+lua: os.execute('/bin/sh')
+
+AWK
+> awk 'BEGIN {system("/bin/sh")}'
+
+Find
+> find / -name <ชื่ออะไรก็ได้> -exec /bin/awk 'BEGIN {system("/bin/sh")}' \;
+อีกแบบ
+> find . -exec /bin/sh \; -quit
+
+Vim
+1.
+> vim -c ':!/bin/sh'
+
+2.
+> vim
+> :set shell=/bin/sh
+> :shell
+
