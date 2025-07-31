@@ -1,4 +1,4 @@
-Check os version
+Check and Test
 -------------------------------
 
 Check sudo version
