@@ -11,6 +11,7 @@ Basic
 curl -L https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh | sh
 ```
 
+Basic set value
 ```
 VHOST
 ex. blog.infdfdf.local
